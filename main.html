@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>My Book List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>MyBookList</h1>
-	<div class="form-group">
-		<form method= post>
-			 <label for="title">title:</label>
-             <input type="text" id="title" name="title">
 
-			<label for="author">author:</label>
-             <input type="text" id="author" name="author">
+    <h1>MyBookList</h1>
 
-			<label for="isbn">ISBN No:</label>
-             <input type="number" id="isbn" name="isbn">	
-		</form>
-		<button id=submit>Add Book</button>
-		<table id="book-list">
-			<tr>
-			<th>Title</th>
-			<th>Author</th>
-			<th>ISBN#</th>
-			</tr>
-			
-		</table>
-	</div>
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title">
+
+        <label for="author">Author</label>
+        <input type="text" id="author">
+
+        <label for="isbn">ISBN No</label>
+        <input type="number" id="isbn">
+
+        <button id="submit" type="button">Add Book</button>
+    </div>
+
+    <table id="book-list" class="table-striped">
+    </table>
+
+    <script src="script.js"></script>
 
 </body>
 
